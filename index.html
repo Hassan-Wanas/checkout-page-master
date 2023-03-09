@@ -37,5 +37,133 @@
     <link rel="stylesheet" href="output.css" />
     <title>Devchallenges</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>Checkout</h1>
+      <form action="">
+        <fieldset>
+          <legend>Contact infomation</legend>
+          <label for="email">E-mail</label>
+          <div>
+            <i></i>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email..."
+            />
+          </div>
+          <label for="phone">Phone</label>
+          <div>
+            <i></i>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Enter your phone..."
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Shipping address</legend>
+          <label for="fullName">Full name</label>
+          <div>
+            <i></i>
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              placeholder="Rodney Cotton"
+            />
+          </div>
+          <label for="address">Address</label>
+          <div>
+            <i></i>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Your address.."
+            />
+          </div>
+          <label for="city">City</label>
+          <div>
+            <i></i>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Your city.."
+            />
+          </div>
+          <label for="country">Country</label>
+          <div>
+            <i></i>
+            <select name="country" id="country">
+              <option value="Your country.." selected disabled>
+                Your country..
+              </option>
+            </select>
+          </div>
+          <label for="postalCode">Postal code</label>
+          <div>
+            <i></i>
+            <input
+              type="number"
+              name="postalCode"
+              id="postalCode"
+              placeholder="Your postal code.."
+            />
+          </div>
+        </fieldset>
+        <div>
+          <input type="checkbox" name="save" id="save" />
+          <label for="save">Save this information for next time</label>
+        </div>
+        <button type="submit">Continue</button>
+        <fieldset>
+          <div>
+            <div>
+              <img src="./photo1.png" alt="backbag" />
+            </div>
+            <h4>Vintage Backbag</h4>
+            <div>
+              <p>$54.99</p>
+              <p>$94.99</p>
+            </div>
+            <div>
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="./photo2.png" alt="shoes" />
+            </div>
+            <h4>Levi Shoes</h4>
+            <div>
+              <p>$74.99</p>
+              <p>$124.99</p>
+            </div>
+            <div>
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>Shipping</p>
+              <p>$19</p>
+            </div>
+            <div>
+              <p>Total</p>
+              <p>$148.98</p>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
 </html>
