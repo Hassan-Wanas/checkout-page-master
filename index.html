@@ -28,24 +28,125 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://kit.fontawesome.com/10087c1eb8.css"
+    <script
+      src="https://kit.fontawesome.com/10087c1eb8.js"
       crossorigin="anonymous"
-    />
+    ></script>
 
     <link rel="stylesheet" href="output.css" />
     <title>Devchallenges</title>
   </head>
   <body>
-    <main>
-      <h1>Checkout</h1>
-      <form action="">
+    <main class="w-[375px] mx-auto px-3 flex flex-col bg-slate-400">
+      <h1 class="font-Montserrat not-italic font-semibold text-2xl mt-8 text-Gray4">
+        Checkout
+      </h1>
+      <form action="" class="flex flex-col gap-y-8">
+        <fieldset class="flex flex-col gap-y-7 px-6 pt-7 pb-3">
+          <div class="flex flex-row gap-x-5">
+            <div class="w-[122.75px] h-[124.64px]">
+              <img
+                src="./photo1.png"
+                alt="backbag"
+                class="object-cover rounded-xl"
+              />
+            </div>
+            <div class="flex flex-col">
+              <h4
+                class="font-Montserrat not-italic font-semibold text-xs text-Gray4"
+              >
+                Vintage Backbag
+              </h4>
+              <div class="flex flex-row items-center gap-x-3 mt-2">
+                <p
+                  class="font-Montserrat not-italic font-semibold text-sm text-Orange1"
+                >
+                  $54.99
+                </p>
+                <p
+                  class="font-Montserrat not-italic font-semibold text-[10px] leading-[12px] line-through text-Gray4"
+                >
+                  $94.99
+                </p>
+              </div>
+              <div
+                class="w-32 h-12 border border-solid border-Gray3 rounded-xl mt-8"
+              >
+                <button class="inline-block w-5 h-5 rounded-md bg-Gray5">
+                  -
+                </button>
+                <p
+                  class="inline-block font-Montserrat not-italic font-semibold text-base text-Gray1"
+                >
+                  1
+                </p>
+                <button class="inline-block w-5 h-5 rounded-md bg-Gray5">
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row gap-x-5">
+            <div class="w-[122.75px] h-[124.64px]">
+              <img
+                src="./photo2.png"
+                alt="shoes"
+                class="object-cover rounded-xl"
+              />
+            </div>
+            <div class="flex flex-col">
+              <h4
+                class="font-Montserrat not-italic font-semibold text-xs text-Gray4"
+              >
+                Levi Shoes
+              </h4>
+              <div class="flex flex-row items-center gap-x-3 mt-2">
+                <p
+                  class="font-Montserrat not-italic font-semibold text-sm text-Orange1"
+                >
+                  $74.99
+                </p>
+                <p
+                  class="font-Montserrat not-italic font-semibold text-[10px] leading-[12px] line-through text-Gray4"
+                >
+                  $124.99
+                </p>
+              </div>
+              <div
+                class="w-32 h-12 border border-solid border-Gray3 rounded-xl mt-8"
+              >
+                <button class="inline-block w-5 h-5 rounded-md bg-Gray5">
+                  -
+                </button>
+                <p
+                  class="inline-block font-Montserrat not-italic font-semibold text-base text-Gray1"
+                >
+                  1
+                </p>
+                <button class="inline-block w-5 h-5 rounded-md bg-Gray5">
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-14">
+            <div
+              class="flex flex-row justify-between border-t border-solid border-Gray4 py-1"
+            >
+              <p class="font-Montserrat not-italic font-semibold text-sm text-Gray1">Shipping</pclass=>
+              <p class="font-Montserrat not-italic font-semibold text-sm text-Gray1">$19</p>
+            </div>
+            <div class="flex flex-row justify-between border-t border-solid border-Gray4 py-1">
+              <p class="font-Montserrat not-italic font-semibold text-sm text-Gray1">Total</p>
+              <p class="font-Montserrat not-italic font-semibold text-sm text-Gray1">$148.98</p>
+            </div>
+          </div>
+        </fieldset>
         <fieldset>
           <legend>Contact infomation</legend>
           <label for="email">E-mail</label>
           <div>
-            <i></i>
+            <i class="fa-solid fa-envelope"></i>
             <input
               type="email"
               name="email"
@@ -55,7 +156,7 @@
           </div>
           <label for="phone">Phone</label>
           <div>
-            <i></i>
+            <i class="fa-solid fa-phone"></i>
             <input
               type="tel"
               name="phone"
@@ -68,7 +169,7 @@
           <legend>Shipping address</legend>
           <label for="fullName">Full name</label>
           <div>
-            <i></i>
+            <i class="fa-solid fa-circle-user"></i>
             <input
               type="text"
               name="fullName"
@@ -78,7 +179,7 @@
           </div>
           <label for="address">Address</label>
           <div>
-            <i></i>
+            <i class="fa-solid fa-house"></i>
             <input
               type="text"
               name="address"
@@ -88,7 +189,7 @@
           </div>
           <label for="city">City</label>
           <div>
-            <i></i>
+            <i class="fa-solid fa-city"></i>
             <input
               type="text"
               name="city"
@@ -98,7 +199,7 @@
           </div>
           <label for="country">Country</label>
           <div>
-            <i></i>
+            <i class="fa-solid fa-city"></i>
             <select name="country" id="country">
               <option value="Your country.." selected disabled>
                 Your country..
@@ -107,7 +208,7 @@
           </div>
           <label for="postalCode">Postal code</label>
           <div>
-            <i></i>
+            <i class="fa-solid fa-envelopes-bulk"></i>
             <input
               type="number"
               name="postalCode"
@@ -121,48 +222,6 @@
           <label for="save">Save this information for next time</label>
         </div>
         <button type="submit">Continue</button>
-        <fieldset>
-          <div>
-            <div>
-              <img src="./photo1.png" alt="backbag" />
-            </div>
-            <h4>Vintage Backbag</h4>
-            <div>
-              <p>$54.99</p>
-              <p>$94.99</p>
-            </div>
-            <div>
-              <button>-</button>
-              <p>1</p>
-              <button>+</button>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="./photo2.png" alt="shoes" />
-            </div>
-            <h4>Levi Shoes</h4>
-            <div>
-              <p>$74.99</p>
-              <p>$124.99</p>
-            </div>
-            <div>
-              <button>-</button>
-              <p>1</p>
-              <button>+</button>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p>Shipping</p>
-              <p>$19</p>
-            </div>
-            <div>
-              <p>Total</p>
-              <p>$148.98</p>
-            </div>
-          </div>
-        </fieldset>
       </form>
     </main>
   </body>
