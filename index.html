@@ -38,7 +38,9 @@
   </head>
   <body>
     <main class="w-[375px] mx-auto px-3 flex flex-col bg-slate-400">
-      <h1 class="font-Montserrat not-italic font-semibold text-2xl mt-8 text-Gray4">
+      <h1
+        class="font-Montserrat not-italic font-semibold text-2xl mt-8 text-Gray4 pl-1"
+      >
         Checkout
       </h1>
       <form action="" class="flex flex-col gap-y-8">
@@ -70,19 +72,15 @@
                 </p>
               </div>
               <div
-                class="w-32 h-12 border border-solid border-Gray3 rounded-xl mt-8"
+                class="w-32 h-12 flex flex-row justify-around items-center border border-solid border-Gray3 rounded-xl mt-8"
               >
-                <button class="inline-block w-5 h-5 rounded-md bg-Gray5">
-                  -
-                </button>
+                <button class="w-5 h-5 leading-5 rounded-md bg-Gray5">-</button>
                 <p
-                  class="inline-block font-Montserrat not-italic font-semibold text-base text-Gray1"
+                  class="font-Montserrat not-italic font-semibold text-base text-Gray1"
                 >
                   1
                 </p>
-                <button class="inline-block w-5 h-5 rounded-md bg-Gray5">
-                  +
-                </button>
+                <button class="w-5 h-5 leading-5 rounded-md bg-Gray5">+</button>
               </div>
             </div>
           </div>
@@ -113,19 +111,15 @@
                 </p>
               </div>
               <div
-                class="w-32 h-12 border border-solid border-Gray3 rounded-xl mt-8"
+                class="w-32 h-12 flex flex-row justify-around items-center border border-solid border-Gray3 rounded-xl mt-8"
               >
-                <button class="inline-block w-5 h-5 rounded-md bg-Gray5">
-                  -
-                </button>
+                <button class="w-5 h-5 leading-5 rounded-md bg-Gray5">-</button>
                 <p
-                  class="inline-block font-Montserrat not-italic font-semibold text-base text-Gray1"
+                  class="font-Montserrat not-italic font-semibold text-base text-Gray1"
                 >
                   1
                 </p>
-                <button class="inline-block w-5 h-5 rounded-md bg-Gray5">
-                  +
-                </button>
+                <button class="w-5 h-5 leading-5 rounded-md bg-Gray5">+</button>
               </div>
             </div>
           </div>
@@ -133,96 +127,200 @@
             <div
               class="flex flex-row justify-between border-t border-solid border-Gray4 py-1"
             >
-              <p class="font-Montserrat not-italic font-semibold text-sm text-Gray1">Shipping</pclass=>
-              <p class="font-Montserrat not-italic font-semibold text-sm text-Gray1">$19</p>
+              <p
+                class="font-Montserrat not-italic font-semibold text-sm text-Gray1"
+              >
+                Shipping
+              </p>
+              <p
+                class="font-Montserrat not-italic font-semibold text-sm text-Gray1"
+              >
+                $19
+              </p>
             </div>
-            <div class="flex flex-row justify-between border-t border-solid border-Gray4 py-1">
-              <p class="font-Montserrat not-italic font-semibold text-sm text-Gray1">Total</p>
-              <p class="font-Montserrat not-italic font-semibold text-sm text-Gray1">$148.98</p>
+            <div
+              class="flex flex-row justify-between border-t border-solid border-Gray4 py-1"
+            >
+              <p
+                class="font-Montserrat not-italic font-semibold text-sm text-Gray1"
+              >
+                Total
+              </p>
+              <p
+                class="font-Montserrat not-italic font-semibold text-sm text-Gray1"
+              >
+                $148.98
+              </p>
             </div>
           </div>
         </fieldset>
-        <fieldset>
-          <legend>Contact infomation</legend>
-          <label for="email">E-mail</label>
-          <div>
+        <fieldset
+          class="font-Montserrat not-italic font-semibold text-xs text-Gray3"
+        >
+          <legend
+            class="font-Montserrat not-italic font-semibold text-sm text-Gray1 mb-3"
+          >
+            Contact infomation
+          </legend>
+          <label
+            for="email"
+            class="font-Montserrat not-italic font-semibold text-[10px] leading-[12px] text-Gray2"
+            >E-mail</label
+          >
+          <div
+            class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
+          >
             <i class="fa-solid fa-envelope"></i>
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Enter your email..."
+              class="h-fit w-full rounded-md pl-1 outline-none"
             />
           </div>
-          <label for="phone">Phone</label>
-          <div>
+          <label
+            for="phone"
+            class="font-Montserrat not-italic font-semibold text-[10px] leading-[12px] text-Gray2"
+            >Phone</label
+          >
+          <div
+            class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2"
+          >
             <i class="fa-solid fa-phone"></i>
             <input
               type="tel"
               name="phone"
               id="phone"
               placeholder="Enter your phone..."
+              class="h-fit w-full rounded-md pl-1 outline-none"
             />
           </div>
         </fieldset>
-        <fieldset>
-          <legend>Shipping address</legend>
-          <label for="fullName">Full name</label>
-          <div>
+        <fieldset
+          class="font-Montserrat not-italic font-semibold text-xs text-Gray3"
+        >
+          <legend
+            class="font-Montserrat not-italic font-semibold text-sm text-Gray1 mb-3"
+          >
+            Shipping address
+          </legend>
+          <label
+            for="fullName"
+            class="font-Montserrat not-italic font-semibold text-[10px] leading-[12px] text-Gray2"
+            >Full name</label
+          >
+          <div
+            class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
+          >
             <i class="fa-solid fa-circle-user"></i>
             <input
               type="text"
               name="fullName"
               id="fullName"
-              placeholder="Rodney Cotton"
+              placeholder="Ex: Rodney Cotton"
+              class="h-fit w-full rounded-md pl-1 outline-none"
             />
           </div>
-          <label for="address">Address</label>
-          <div>
+          <label
+            for="address"
+            class="font-Montserrat not-italic font-semibold text-[10px] leading-[12px] text-Gray2"
+            >Address</label
+          >
+          <div
+            class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
+          >
             <i class="fa-solid fa-house"></i>
             <input
               type="text"
               name="address"
               id="address"
               placeholder="Your address.."
+              class="h-fit w-full rounded-md pl-1 outline-none"
             />
           </div>
-          <label for="city">City</label>
-          <div>
+          <label
+            for="city"
+            class="font-Montserrat not-italic font-semibold text-[10px] leading-[12px] text-Gray2"
+            >City</label
+          >
+          <div
+            class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
+          >
             <i class="fa-solid fa-city"></i>
             <input
               type="text"
               name="city"
               id="city"
               placeholder="Your city.."
+              class="h-fit w-full rounded-md pl-1 outline-none"
             />
           </div>
-          <label for="country">Country</label>
-          <div>
+          <label
+            for="country"
+            class="font-Montserrat not-italic font-semibold text-[10px] leading-[12px] text-Gray2"
+            >Country</label
+          >
+          <div
+            class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-1 mb-4"
+          >
             <i class="fa-solid fa-city"></i>
-            <select name="country" id="country">
+            <label
+              for="country"
+              class="font-Montserrat not-italic font-semibold text-[10px] leading-[12px] text-Gray2"
+            ></label>
+            <select
+              name="country"
+              id="country"
+              class="h-fit w-full rounded-md pl-1 outline-none"
+            >
               <option value="Your country.." selected disabled>
                 Your country..
               </option>
+              <option value="Makka">Makka</option>
+              <option value="Saudia">Saudia</option>
+              <option value="Egypt">Egypt</option>
             </select>
           </div>
-          <label for="postalCode">Postal code</label>
-          <div>
+          <label
+            for="postalCode"
+            class="font-Montserrat not-italic font-semibold text-[10px] leading-[12px] text-Gray2"
+            >Postal code</label
+          >
+          <div
+            class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
+          >
             <i class="fa-solid fa-envelopes-bulk"></i>
             <input
-              type="number"
+              type="text"
               name="postalCode"
               id="postalCode"
               placeholder="Your postal code.."
+              class="h-fit w-full rounded-md pl-1 outline-none"
             />
           </div>
         </fieldset>
-        <div>
-          <input type="checkbox" name="save" id="save" />
-          <label for="save">Save this information for next time</label>
+        <div class="flex flex-row items-center gap-2 mt-[-36px]">
+          <input type="checkbox" name="save" id="save" class="w-4 h-4" />
+          <label
+            for="save"
+            class="font-Montserrat not-italic font-semibold text-[10px] leading-[12px] text-Gray2"
+            >Save this information for next time</label
+          >
         </div>
-        <button type="submit">Continue</button>
+        <button
+          type="submit"
+          class="w-40 h-14 bg-Orange1 rounded-xl self-end font-Montserrat not-italic font-semibold text-base text-white"
+        >
+          Continue
+        </button>
       </form>
+      <p
+        class="font-Montserrat not-italic font-semibold text-sm text-center text-Gray7 mt-24 mb-6"
+      >
+        created by <span class="font-bold underline">Hassan Wanas</span> -
+        devChallenges.io
+      </p>
     </main>
   </body>
 </html>
