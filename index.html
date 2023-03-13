@@ -38,11 +38,16 @@
   </head>
   <body>
     <main
-      class="w-[375px] mx-auto px-3 flex flex-col font-Montserrat not-italic font-semibold bg-slate-400"
+      class="w-[375px] mx-auto px-3 flex flex-col font-Montserrat not-italic font-semibold xl:w-8/12"
     >
       <h1 class="text-2xl mt-8 text-Gray4 pl-1">Checkout</h1>
-      <form action="" class="flex flex-col gap-y-8">
-        <fieldset class="flex flex-col gap-y-7 px-6 pt-7 pb-3">
+      <form
+        action=""
+        class="flex flex-col gap-y-8 xl:grid xl:grid-cols-2 xl:gap-28"
+      >
+        <fieldset
+          class="flex flex-col gap-y-7 px-6 pt-7 pb-3 xl:col-start-2 xl:row-span-2 xl:w-[383px] xl:h-[535px] xl:px-7 xl:pt-8 xl:pb-3 xl:mt-12"
+        >
           <div class="flex flex-row gap-x-5">
             <div class="w-[122.75px] h-[124.64px]">
               <img
@@ -62,9 +67,17 @@
               <div
                 class="w-32 h-12 flex flex-row justify-around items-center border border-solid border-Gray3 rounded-xl mt-8"
               >
-                <button class="w-5 h-5 leading-5 rounded-md bg-Gray5">-</button>
+                <button
+                  class="w-5 h-5 text-2xl leading-5 text-Gray3 rounded-md bg-Gray5"
+                >
+                  -
+                </button>
                 <p class="text-base text-Gray1">1</p>
-                <button class="w-5 h-5 leading-5 rounded-md bg-Gray5">+</button>
+                <button
+                  class="w-5 h-5 text-2xl leading-5 text-Gray3 rounded-md bg-Gray5"
+                >
+                  +
+                </button>
               </div>
             </div>
           </div>
@@ -87,167 +100,181 @@
               <div
                 class="w-32 h-12 flex flex-row justify-around items-center border border-solid border-Gray3 rounded-xl mt-8"
               >
-                <button class="w-5 h-5 leading-5 rounded-md bg-Gray5">-</button>
+                <button
+                  class="w-5 h-5 text-2xl leading-5 text-Gray3 rounded-md bg-Gray5"
+                >
+                  -
+                </button>
                 <p class="text-base text-Gray1">1</p>
-                <button class="w-5 h-5 leading-5 rounded-md bg-Gray5">+</button>
+                <button
+                  class="w-5 h-5 text-2xl leading-5 text-Gray3 rounded-md bg-Gray5"
+                >
+                  +
+                </button>
               </div>
             </div>
           </div>
           <div class="mt-14">
             <div
-              class="flex flex-row justify-between border-t border-solid border-Gray4 py-1"
+              class="flex flex-row justify-between border-t border-solid border-Gray7 py-1"
             >
               <p class="text-sm text-Gray1">Shipping</p>
               <p class="text-sm text-Gray1">$19</p>
             </div>
             <div
-              class="flex flex-row justify-between border-t border-solid border-Gray4 py-1"
+              class="flex flex-row justify-between border-t border-solid border-Gray7 py-1"
             >
               <p class="text-sm text-Gray1">Total</p>
               <p class="text-sm text-Gray1">$148.98</p>
             </div>
           </div>
         </fieldset>
-        <fieldset class="text-xs text-Gray3">
-          <legend class="text-sm text-Gray1 mb-3">Contact infomation</legend>
-          <label for="email" class="text-[10px] leading-[12px] text-Gray2"
-            >E-mail</label
+        <div class="flex flex-col gap-y-8 xl:col-start-1 xl:row-start-1">
+          <fieldset class="text-xs text-Gray3">
+            <legend class="text-sm text-Gray1 mb-3">Contact infomation</legend>
+            <label for="email" class="text-[10px] leading-[12px] text-Gray2"
+              >E-mail</label
+            >
+            <div
+              class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
+            >
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email..."
+                class="h-fit w-full rounded-md pl-1 outline-none"
+              />
+            </div>
+            <label for="phone" class="text-[10px] leading-[12px] text-Gray2"
+              >Phone</label
+            >
+            <div
+              class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2"
+            >
+              <i class="fa-solid fa-phone"></i>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone..."
+                class="h-fit w-full rounded-md pl-1 outline-none"
+              />
+            </div>
+          </fieldset>
+          <fieldset
+            class="text-xs text-Gray3 xl:w-[465px]"
           >
-          <div
-            class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
-          >
-            <i class="fa-solid fa-envelope"></i>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email..."
-              class="h-fit w-full rounded-md pl-1 outline-none"
-            />
-          </div>
-          <label for="phone" class="text-[10px] leading-[12px] text-Gray2"
-            >Phone</label
-          >
-          <div
-            class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2"
-          >
-            <i class="fa-solid fa-phone"></i>
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="Enter your phone..."
-              class="h-fit w-full rounded-md pl-1 outline-none"
-            />
-          </div>
-        </fieldset>
-        <fieldset class="text-xs text-Gray3">
-          <legend class="text-sm text-Gray1 mb-3">Shipping address</legend>
-          <label for="fullName" class="text-[10px] leading-[12px] text-Gray2"
-            >Full name</label
-          >
-          <div
-            class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
-          >
-            <i class="fa-solid fa-circle-user"></i>
-            <input
-              type="text"
-              name="fullName"
-              id="fullName"
-              placeholder="Ex: Rodney Cotton"
-              class="h-fit w-full rounded-md pl-1 outline-none"
-            />
-          </div>
-          <label for="address" class="text-[10px] leading-[12px] text-Gray2"
-            >Address</label
-          >
-          <div
-            class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
-          >
-            <i class="fa-solid fa-house"></i>
-            <input
-              type="text"
-              name="address"
-              id="address"
-              placeholder="Your address.."
-              class="h-fit w-full rounded-md pl-1 outline-none"
-            />
-          </div>
-          <label for="city" class="text-[10px] leading-[12px] text-Gray2"
-            >City</label
-          >
-          <div
-            class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
-          >
-            <i class="fa-solid fa-city"></i>
-            <input
-              type="text"
-              name="city"
-              id="city"
-              placeholder="Your city.."
-              class="h-fit w-full rounded-md pl-1 outline-none"
-            />
-          </div>
-          <div class="flex flex-row justify-between">
-            <div class="w-[162.98px]">
-              <label for="country" class="text-[10px] leading-[12px] text-Gray2"
-                >Country</label
-              >
-              <div
-                class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-1 mb-4"
-              >
-                <i class="fa-solid fa-city"></i>
+            <legend class="text-sm text-Gray1 mb-3">Shipping address</legend>
+            <label for="fullName" class="text-[10px] leading-[12px] text-Gray2"
+              >Full name</label
+            >
+            <div
+              class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
+            >
+              <i class="fa-solid fa-circle-user"></i>
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                placeholder="Ex: Rodney Cotton"
+                class="h-fit w-full rounded-md pl-1 outline-none"
+              />
+            </div>
+            <label for="address" class="text-[10px] leading-[12px] text-Gray2"
+              >Address</label
+            >
+            <div
+              class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
+            >
+              <i class="fa-solid fa-house"></i>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Your address.."
+                class="h-fit w-full rounded-md pl-1 outline-none"
+              />
+            </div>
+            <label for="city" class="text-[10px] leading-[12px] text-Gray2"
+              >City</label
+            >
+            <div
+              class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
+            >
+              <i class="fa-solid fa-city"></i>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Your city.."
+                class="h-fit w-full rounded-md pl-1 outline-none"
+              />
+            </div>
+            <div class="flex flex-row justify-between">
+              <div class="w-[162.98px]">
                 <label
                   for="country"
                   class="text-[10px] leading-[12px] text-Gray2"
-                ></label>
-                <select
-                  name="country"
-                  id="country"
-                  class="h-fit w-full rounded-md pl-1 outline-none"
+                  >Country</label
                 >
-                  <option value="Your country.." selected disabled>
-                    Your country..
-                  </option>
-                  <option value="Makka">Makka</option>
-                  <option value="Saudia">Saudia</option>
-                  <option value="Egypt">Egypt</option>
-                </select>
+                <div
+                  class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-1 mb-4"
+                >
+                  <i class="fa-solid fa-city"></i>
+                  <label
+                    for="country"
+                    class="text-[10px] leading-[12px] text-Gray2"
+                  ></label>
+                  <select
+                    name="country"
+                    id="country"
+                    class="h-fit w-full rounded-md pl-1 outline-none"
+                  >
+                    <option value="Your country.." selected disabled>
+                      Your country..
+                    </option>
+                    <option value="Makka">Makka</option>
+                    <option value="Saudia">Saudia</option>
+                    <option value="Egypt">Egypt</option>
+                  </select>
+                </div>
+              </div>
+              <div class="w-[162.98px]">
+                <label
+                  for="postalCode"
+                  class="text-[10px] leading-[12px] text-Gray2"
+                  >Postal code</label
+                >
+                <div
+                  class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
+                >
+                  <i class="fa-solid fa-envelopes-bulk"></i>
+                  <input
+                    type="text"
+                    name="postalCode"
+                    id="postalCode"
+                    placeholder="Your postal code.."
+                    class="h-fit w-full rounded-md pl-1 outline-none"
+                  />
+                </div>
               </div>
             </div>
-            <div class="w-[162.98px]">
-              <label
-                for="postalCode"
-                class="text-[10px] leading-[12px] text-Gray2"
-                >Postal code</label
-              >
-              <div
-                class="h-10 border border-solid border-Gray3 rounded-xl pl-2 flex flex-row items-center gap-2 mb-4"
-              >
-                <i class="fa-solid fa-envelopes-bulk"></i>
-                <input
-                  type="text"
-                  name="postalCode"
-                  id="postalCode"
-                  placeholder="Your postal code.."
-                  class="h-fit w-full rounded-md pl-1 outline-none"
-                />
-              </div>
-            </div>
+          </fieldset>
+          <div class="flex flex-row items-center gap-2 mt-[-36px]">
+            <input type="checkbox" name="save" id="save" class="w-4 h-4" />
+            <label for="save" class="text-[10px] leading-[12px] text-Gray2"
+              >Save this information for next time</label
+            >
           </div>
-        </fieldset>
-        <div class="flex flex-row items-center gap-2 mt-[-36px]">
-          <input type="checkbox" name="save" id="save" class="w-4 h-4" />
-          <label for="save" class="text-[10px] leading-[12px] text-Gray2"
-            >Save this information for next time</label
+          <button
+            type="submit"
+            class="w-40 h-14 bg-Orange1 rounded-xl self-end text-base text-white"
           >
+            Continue
+          </button>
         </div>
-        <button
-          type="submit"
-          class="w-40 h-14 bg-Orange1 rounded-xl self-end text-base text-white"
-        >
-          Continue
-        </button>
       </form>
       <p class="text-sm text-center text-Gray7 mt-24 mb-6">
         created by <span class="font-bold underline">Hassan Wanas</span> -
